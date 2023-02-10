@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Dark Mode Switch</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+<body>
+  <header>
+    <h1>Caixa de Seleção do Dark Mode e Light Mode </h1>
+    <label class="switch">
+      <input type="checkbox" id="checkbox">
+      <span class="slider round"></span>
+    </label>
+  </header>
+  <main>
+    <h2>Conteúdo da página</h2>
+    <p>Neste código, estamos armazenando o tema atual (se houver) na variável currentTheme usando o método localStorage.getItem(). Em seguida, verificamos se currentTheme tem um valor e, se tiver, definimos o atributo data-theme do elemento documentElement como currentTheme. Além disso, se currentTheme for igual a 'dark', marcamos a caixa de seleção como "selecionada" (toggleSwitch.checked = true).
+
+Na função switchTheme, verificamos se a caixa de seleção está marcada ou não e, em seguida, definimos o atributo data-theme como 'dark' ou 'light' e armazenamos o tema atual no localStorage usando o método localStorage.setItem().
+
+Por fim, adicionamos um evento change ao toggleSwitch para que a função switchTheme seja executada sempre que a caixa de seleção for alterada..</p>
+<p>No CSS, você pode adicionar um seletor com o atributo "data-theme" igual a "light" e definir as propriedades CSS que deseja</p><p>Com isso, ao clicar no switch, a cor do fundo da página e a cor do texto serão alteradas entre "dark" e "light" conforme o estado do switch.</p>
+  </main>
+  <script src="script.js"></script>
+</body>
+
+</html>
